@@ -2,7 +2,7 @@
 set -Eeuo pipefail
 # shellcheck source=../lib/common.sh
 source "$SCRIPT_DIR/lib/common.sh"
-
+source "$HOME/.cargo/env"
 require_ubuntu
 arch=$(architecture)
 

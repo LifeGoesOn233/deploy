@@ -52,5 +52,5 @@ as_root chown "$TARGET_USER:$group" "$node_script"
 as_root chmod 0755 "$node_script"
 run_as_target env HOME="$home" bash "$node_script"
 rm -f "$node_script"
-
+echo 'source "$HOME/.cargo/env"' >> ~/.bashrc
 log 'Rust, Cargo, NVM, Node.js and npm installed'
